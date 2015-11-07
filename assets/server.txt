@@ -1,0 +1,6 @@
+Domain: painrandomiser.com
+Cloud: Washington DC A
+IP: 198.105.222.177
+
+user: root
+pass: 2v3yo7fjbbci

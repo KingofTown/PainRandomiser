@@ -1,0 +1,160 @@
+/* Custom Font */
+@font-face {
+	font-family: "dsfont";
+	src: url('belisa_plumilla.ttf');
+}
+
+
+/* CSS */
+html { margin:0; height:100%; background-color:#000; background-image:url('../images/PainMachineBG.png'); background-repeat:no-repeat; background-position: center top; overflow-y:scroll; }
+body { margin:0;font-family:Arial; color:#CCC; font-size:12px; }
+header { color:#C4DBDF; text-shadow:0 0 5px #000, 0 0 4px #000, 0 0 3px #000; height:140px; }
+section { padding:15px; border-radius:4px; opacity:0.98;  text-align:center; }
+a { color:#79A0C8; text-decoration:none; }
+a:hover { color:#BCD2E0; }
+.spacer { height:1px; border-bottom:solid 1px #222; clear:both; margin:0 0 10px 0; }
+
+#tooltip-style { padding: 8px; font-size:12px; position: absolute; z-index: 9999; max-width: 300px; border:none !important; border-radius:1px !important; background-color:#111 !important; color:#FFF !important; box-shadow:0 0 5px #000; }
+#tooltip-style img { max-height:600px; }
+
+.mainsite { width:800px; margin-left:auto; margin-right:auto; }
+.footer { text-align:left; position: fixed; bottom: 0; color:#FFF; width:100%; padding:10px; opacity:0.5; }
+.footer:hover { opacity:1; }
+
+/* Button */
+.push { margin-top:190px; position:relative; }
+.pushme { display:none; background-image:url('../images/button.png'); width:246px; height:87px; background-repeat:no-repeat; opacity:0.9; }
+.pushme:hover { cursor:pointer; background-position:0 -88px;  }
+
+.viewall { display:none; margin-top:25px; background-image:url('../images/button2.png'); width:180px; height:59px; background-repeat:no-repeat; opacity:0.9; }
+.viewall:hover { cursor:pointer; background-position:0 -59px; }
+
+.allcards { margin-bottom:50px; display:none; background-color:#000;  padding:10px; z-index:50; position:absolute; border-radius:3px; min-height:220px; box-shadow:0 0 5px #000; margin-left:70px; width:640px;  margin-top:-200px; }
+.allcards td { font-size:11px; padding:4px !important; border-bottom:solid 1px #333; }
+.allcards tr:hover { background-color:#14171B; }
+.allcards .allcards-button { display:inline-block; padding:5px 7px; margin-right:5px; margin-bottom:-2px; }
+.allcards .allcards-button:hover { background-color:#222; cursor:pointer; }
+.allcards .card-block { color:#97ABB7;font-weight:bold; padding:5px 7px; margin:0 2px 2px 0; display:inline-block; font-size:14px; width:195px; }
+.allcards .card-block:hover { background-color:#222; }
+.allcards-selected {
+	color:#FFF !important;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	background: #364552; /* Old browsers */
+	background: -moz-linear-gradient(top,  #364552 0%, #2c3742 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#364552), color-stop(100%,#2c3742)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #364552 0%,#2c3742 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #364552 0%,#2c3742 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #364552 0%,#2c3742 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #364552 0%,#2c3742 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#364552', endColorstr='#2c3742',GradientType=0 ); /* IE6-9 */
+}
+
+/* Sizes */
+.card-frame, .card1, .card2, .card3 { width:381px; height:445px; }
+.card-image { width:256px; height:186px; }
+.card-sun { width:130px; height:122px; }
+.card-task { width:205px; max-height:140px; }
+.card-leave { background-image:url('../cards/leave.png'); }
+
+/* Z index's */
+.card-image { z-index:4; }
+.card-frame { z-index:5; }
+.card-sun { z-index:6; }
+.card-task { z-index:10; }
+
+.card1, .card2 { display:none; margin-top:150px; }
+.card1-unlucky { margin-top:-10px; margin-left:-100px; }
+.card2-unlucky { margin-top:-10px; margin-right:-110px; }
+.card3 { display:none; margin:-10px 0 0 215px; z-index:999; }
+ 
+.refate-unlucky { margin-top:450px !important; margin-left:280px !important; }
+.failed-unlucky { margin-top:450px !important; margin-left:460px !important; }
+.card1 { float:left; }
+.card2 { float:right; }
+
+.card3 .card-image { z-index:34; }
+.card3 .card-frame { z-index:35; }
+.card3 .card-sun { z-index:36; }
+.card3 .card-task { z-index:40; }
+
+.head { position:absolute; z-index:666; margin:1px 0 0 261px; opacity:1; display:none; }
+.ha1, .ha2, .ha3 { display:none; }
+.ha1 { font-size:32px; font-family:dsfont; position:absolute; z-index:667; margin:150px 0 0 250px; }
+.ha2 { font-size:42px; font-family:dsfont; position:absolute; z-index:668; margin:130px 0 0 210px; }
+.ha3 { font-size:48px; font-family:dsfont; position:absolute; z-index:669; margin:160px 0 0 170px; }
+
+.ha1 {
+	transform:rotate(2deg);
+	-ms-transform:rotate(2deg); /* IE 9 */
+	-moz-transform:rotate(2deg); /* Firefox */
+	-webkit-transform:rotate(2deg); /* Safari and Chrome */
+	-o-transform:rotate(2deg); /* Opera */
+}
+.ha2 {
+	transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg); /* IE 9 */
+	-moz-transform:rotate(-10deg); /* Firefox */
+	-webkit-transform:rotate(-10deg); /* Safari and Chrome */
+	-o-transform:rotate(-10deg); /* Opera */
+}
+.ha3 {
+	transform:rotate(10deg);
+	-ms-transform:rotate(10deg); /* IE 9 */
+	-moz-transform:rotate(10deg); /* Firefox */
+	-webkit-transform:rotate(10deg); /* Safari and Chrome */
+	-o-transform:rotate(10deg); /* Opera */
+}
+
+
+.refate, .failed { display:none; font-family:dsfont; background-size:64px 64px; text-align:center; vertical-align:bottom; font-size:28px; position:absolute; width:64px; padding-top:42px; height:24px; opacity:0.7; background-repeat:no-repeat; background-position:center top; }
+
+.refate:hover, .failed:hover {  cursor:pointer; }
+.refate { background-image:url('../images/refate.png'); margin:280px 0 0 362px;  z-index:55; }
+.failed { background-image:url('../images/failed.png'); margin:420px 0 0 362px;  z-index:60; }
+
+/* Styles */
+.card-frame, .card-sun, .card-image, .card-task { position:absolute; }
+.card-frame { background-size:100% 100%; background-repeat:no-repeat; }
+.card-frame-quest { background-image:url('../images/card1.png'); }
+.card-frame-curse { background-image:url('../images/card2.png'); }
+.card-image { background-repeat:no-repeat; background-size:100% 100%; position:absolute; margin:45px 0 0 56px; }
+.card-sun { background-image:url('../images/sunicon.png'); background-size:100% 100%; background-repeat:no-repeat; margin:0px 0 0 230px; text-align:center; padding-left:3px; }
+.card-sun-num { color:#FFF; font-family:dsfont; font-size:42px; font-weight:bold; margin-bottom:-6px; margin-top:28px; }
+.card-sun-text { color:#FFF; font-family:dsfont; font-size:24px; font-weight:bold; }
+.card-task {  text-align:left;  background-color:#000; opacity:0.8; border-radius:3px; box-shadow:0 0 5px #000,0 0 15px #000; margin:225px 0 0 72px; padding:10px; font-size:12px; font-family:Arial; }
+.card-task-title { font-family:dsfont; font-size:32px; font-weight:bold; color:#FFF; position:absolute; z-index:50; margin:55px 0 0 70px; }
+.card-task-title2 { font-size:22px; font-family:Arial; color:#999; }
+.card-task-title-curse { color:#E32F2B !important; }
+.card-task-flavor { font-size:12px; color:#888; margin-bottom:10px; font-family:Verdana, Geneva, sans-serif; }
+.card-task-action { font-size:12px; color:#E9E9E9; margin-top:10px; font-family:Verdana, Geneva, sans-serif; }
+
+.action-text { opacity:0.5;font-size:11px;margin-bottom:5px; }
+.action-text-curse { color:#C05656; }
+.action-text-quest { color:#6C913C; }
+
+.footer-image { width:72px; height:42px; background-repeat:no-repeat; background-size:100% 100%; display:inline-block; margin-right:5px; }
+.footer-image:hover { outline:solid 2px #293038; box-shadow:0 0 10px #000; }
+.footer-days { opacity:0.7; background-color:#000; font-size:10px; padding:2px 0 2px 4px; text-transform:uppercase; }
+.card-history-box { overflow-x:hidden; }
+
+.closebutton:hover { cursor:pointer; background-color:#080808; border-radius:2px; }
+.closebutton { padding:5px; margin-right:8px; vertical-align:bottom; margin-bottom:8px; }
+
+.shadow {
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000,
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000,
+	0px 0px 2px #000,
+	0px 0px 4px #000,
+	0px 0px 6px #000,
+	0px 0px 10px #000;
+}
+ 
+ 
